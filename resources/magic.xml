@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2023 Joshua Azimullah
+  ~
+  ~ This file is part of Gruvah.
+  ~
+  ~ Gruvah is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ Gruvah is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with Gruvah. If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes/>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below" lookAndFeel="FoleysFinest"
+                rotary-fill="FF219DD2" background-color="FF562F00"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" display="flexbox" flex-direction="column" background-color="FF343541"
+        resizable="0" resize-corner="0" width="500" height="700" border="0"
+        padding="0" margin="0" radius="0" min-height="700" min-width="500"
+        max-width="500" max-height="700">
+    <View margin="0" padding="0" radius="0" lookAndFeel="FoleysFinest"
+          flex-direction="column" flex-justify-content="start" flex-align-content="stretch"
+          flex-wrap="wrap" background-color="FF000000">
+      <View flex-direction="column" min-width="" height="170em" background-color="FF562F00"
+            flex-grow="0.7">
+        <Label margin="0" padding="0" border="0" radius="0" caption="Pitch Envelope"
+               caption-placement="centred" height="" flex-grow="0.2" min-height=""
+               caption-color="FFFFFFFF" background-color="FF562F00"/>
+        <View min-height="" height="150em" margin="0" padding="0" flex-grow="0.8"
+              pos-x="" pos-y="" pos-height="" pos-width="" background-color="FF562F00"
+              radius="0">
+          <View flex-direction="column" background-color="FF562F00" radius="0">
+            <Label background-color="FF562F00" margin="5"/>
+            <Label text="Octave" justification="centred" font-size="21" background-color="FF562F00"
+                   caption-placement="centred" flex-align-self="stretch" margin="0"/>
+            <Label text="Note" justification="centred" font-size="21" background-color="FF562F00"
+                   margin="0"/>
+            <Label text="Timing" justification="centred" font-size="21" flex-grow="1.4"
+                   background-color="FF562F00" margin="0"/>
+          </View>
+          <View flex-direction="column" background-color="FF562F00" radius="0">
+            <Label text="##" justification="centred" font-size="20" value="midi_note:1"
+                   background-alpha="0" background-color="FF562F00"/>
+            <Slider parameter="octave_1" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-color="FF562F00" background-alpha="1"/>
+            <Slider parameter="note_1" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-alpha="1" background-color="FF562F00"/>
+            <Slider parameter="timing_1" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    flex-grow="1.4" padding="0" margin="0" slider-textbox="textbox-below"
+                    rotary-fill="FFFFFFFF" background-alpha="1" background-color="FF562F00"/>
+          </View>
+          <View flex-direction="column" background-color="FF562F00" radius="0">
+            <Label text="##" justification="centred" font-size="20" value="midi_note:2"
+                   background-alpha="0" background-color="FF562F00"/>
+            <Slider parameter="octave_2" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-color="FF562F00" background-alpha="1"/>
+            <Slider parameter="note_2" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-alpha="1" background-color="FF562F00"/>
+            <Slider parameter="timing_2" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    flex-grow="1.4" padding="0" margin="0" slider-textbox="textbox-below"
+                    rotary-fill="FFFFFFFF" background-alpha="1" background-color="FF562F00"/>
+          </View>
+          <View flex-direction="column" background-color="FF562F00" radius="0">
+            <Label text="##" justification="centred" font-size="20" value="midi_note:3"
+                   background-alpha="0" background-color="FF562F00"/>
+            <Slider parameter="octave_3" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-color="FF562F00" background-alpha="1"/>
+            <Slider parameter="note_3" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-alpha="1" background-color="FF562F00"/>
+            <Slider parameter="timing_3" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    flex-grow="1.4" padding="0" margin="0" slider-textbox="textbox-below"
+                    rotary-fill="FFFFFFFF" background-alpha="1" background-color="FF562F00"/>
+          </View>
+          <View flex-direction="column" background-color="FF562F00" radius="0">
+            <Label text="##" justification="centred" font-size="20" value="midi_note:4"
+                   background-alpha="0" background-color="FF562F00"/>
+            <Slider parameter="octave_4" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-color="FF562F00" background-alpha="1"/>
+            <Slider parameter="note_4" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    slider-textbox="no-textbox" padding="0" margin="0" rotary-fill="FFFFFFFF"
+                    background-alpha="1" background-color="FF562F00"/>
+            <Slider parameter="timing_4" class="panel" slider-type="rotary-horizontal-vertical"
+                    caption-placement="centred-top" flex-align-self="stretch" caption=""
+                    flex-grow="1.4" padding="0" margin="0" slider-textbox="textbox-below"
+                    rotary-fill="FFFFFFFF" background-alpha="1" background-color="FF562F00"/>
+          </View>
+        </View>
+      </View>
+      <View caption="Amp Envelope" flex-grow=".9" background-color="FF562F00"
+            caption-color="FFFFFFFF">
+        <Slider parameter="amp_attack" caption="Attack" class="panel" slider-type="rotary-horizontal-vertical"
+                caption-placement="centred-top" flex-align-self="stretch" background-color="FF562F00"
+                rotary-fill="FFFFFF" radius="0" caption-color="FFFFFFFF"/>
+        <Slider parameter="amp_decay" caption="Decay" class="panel" slider-type="rotary-horizontal-vertical"
+                caption-placement="centred-top" flex-align-self="stretch" background-color="FF562F00"
+                rotary-fill="FFFFFF" radius="0" caption-color="FFFFFFFF"/>
+        <Slider parameter="amp_sustain" caption="Sustain" class="panel" slider-type="rotary-horizontal-vertical"
+                caption-placement="centred-top" flex-align-self="stretch" background-color="FF562F00"
+                rotary-fill="FFFFFF" radius="0" caption-color="FFFFFFFF"/>
+        <Slider parameter="amp_release" caption="Release" class="panel" slider-type="rotary-horizontal-vertical"
+                caption-placement="centred-top" flex-align-self="stretch" background-color="FF562F00"
+                rotary-fill="FFFFFF" radius="0" caption-color="FFFFFFFF"/>
+        <Slider parameter="amp_exponential_factor_a" caption="Bounce" class="panel"
+                slider-type="rotary-horizontal-vertical" caption-placement="centred-top"
+                flex-align-self="stretch" background-color="FF562F00" rotary-fill="FFFFFF"
+                radius="0" caption-color="FFFFFFFF"/>
+      </View>
+      <View caption="Wave and Phase" flex-grow="0.7" background-color="FF562F00"
+            caption-color="FFFFFFFF">
+        <ComboBox parameter="waveType" caption-placement="centred-bottom" background-color="FF562F00"
+                  radius="0"/>
+        <Slider caption="Phase" parameter="phase" slider-type="rotary-horizontal-vertical"
+                slider-textbox="textbox-right" caption-placement="centred-left"
+                padding="5em" background-color="FF562F00" radius="0" margin="0"
+                rotary-fill="FFFFFF" caption-color="FFFFFFFF"/>
+      </View>
+      <View caption="Saturation" flex-grow="0.7" background-color="FF562F00"
+            caption-color="FFFFFFFF">
+        <ComboBox parameter="saturationType" caption-placement="centred-bottom"
+                  background-color="FF562F00" radius="0"/>
+        <Slider caption="Drive" parameter="driveDb" slider-type="rotary-horizontal-vertical"
+                slider-textbox="textbox-right" caption-placement="centred-left"
+                padding="5em" background-color="FF562F00" radius="0" rotary-fill="FFFFFF"
+                margin="0" caption-color="FFFFFFFF"/>
+      </View>
+      <View flex-grow="0.2" caption-color="FFFFFFFF" background-color="FF000000"
+            margin="0" padding="0">
+        <Label background-color="FF000000" justification="bottom-right" font-size="15"
+               text="Gruvah by DJ Kaasstengel, GPL-3.0"/>
+      </View>
+    </View>
+  </View>
+</magic>
+ 

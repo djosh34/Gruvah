@@ -1,0 +1,15 @@
+[package]
+name = "gruvahlib"
+version = "1.0.1"
+authors = ["djosh34 <djkaasstengel@azimullah.nl>", "jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+assert_approx_eq = "1.1"
+num-complex = "0.4.4"
+rustfft = "6.1.0"
+
+[lib]
+crate-type = ["staticlib"]

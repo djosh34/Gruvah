@@ -1,0 +1,21 @@
+# CMake build artifacts
+build*/
+
+# Rust build artifacts
+target/
+
+# vscode settings
+.vscode/
+
+# idea ide settings
+.idea/
+
+# cmake build files
+cmake-build-debug/
+cmake-build-release/
+cmake-build-release-coverage/
+
+# Just Mac things
+.DS_Store*
+
+
